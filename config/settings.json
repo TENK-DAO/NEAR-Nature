@@ -1,0 +1,17 @@
+{
+  "author": "@NEAR_Nature",
+  "siteUrl": "https://nearnature.pages.dev",
+  "contractName": "dtps.tenk.near",
+  "social": [
+    {
+      "href": "http://discord.gg/WeMHtpHJZ7",
+      "img":  "discord.svg",
+      "alt": "Discord"
+    },
+    {
+      "href": "https://twitter.com/near_nature",
+      "img":  "twitter.svg",
+      "alt": "Twitter"
+    }
+  ]
+}

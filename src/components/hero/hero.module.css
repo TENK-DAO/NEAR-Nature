@@ -1,0 +1,25 @@
+.ps {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.ps p {
+  text-align: center;
+}
+
+.cta {
+  margin-top: 0.5em;
+  padding: var(--spacing-m) var(--spacing-xl);
+}
+
+.setNumber {
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 5em;
+  justify-content: center;
+  gap: var(--spacing-s);
+}
+
+.setNumber label:after {
+  content: ":";
+}

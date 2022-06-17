@@ -1,0 +1,56 @@
+{
+  "viewIn": "View in English",
+  "langPicker": "English",
+  "title": "NEAR Nature",
+  "description": "Welcome to NEAR Nature! We value sustainability and our mission is to help tackle pressing environmental issues through NFTs on NEAR.",
+  "calendarEvent": "Let's plant some trees!",
+  "connectWallet": "Connect Wallet",
+  "signOut": "Sign Out",
+  "myNFTs": "My NFTs",
+  "nextNFT": "Next NFT",
+  "prevNFT": "Previous NFT",
+  "close": "Close",
+  "zoomIn": "Zoom In",
+  "zoomOut": "Zoom Out",
+  "hero": {
+    "title": "The Digital Tree Physical Seed Collection",
+    "body": "The Digital Tree Physical Seed project is a low poly abstract NFT collection with a limited supply of 722. The ultimate goal of this collection is planting 10,000 trees. Each NFT minted will result in roughly 14 trees being planted, and each tree will be tracked with MRV technology from OFP. The trees planted will be measured and their carbon offset tokenized in the form of OFP’s “Open Carbon Credit Token” which our NFT holders will receive as an airdrop. DTPS will show the true power of NFTs and NEAR.",
+    "ps": "NEAR Nature drop at PRESALE_START!",
+    "cta": "Add to Calendar",
+    "action": "ADD_TO_CALENDAR(PRESALE_START)",
+    "saleClosed": {
+      "signedIn": {
+        "ps": "Minting starts at: PRESALE_START\n\nGet in on it! [Join our Discord](http://discord.gg/WeMHtpHJZ7v) and request an invite."
+      },
+      "vip": {
+        "ps": "Welcome, CURRENT_USER! Minting starts at PRESALE_START",
+        "action": "ADD_TO_CALENDAR(PRESALE_START)"
+      }
+    },
+    "presale": {
+      "ps": "REMAINING_COUNT remain. Get in on it:",
+      "cta": "Join our Discord",
+      "action": "JOIN_DISCORD",
+      "vip": {
+        "ps": "REMAINING_COUNT remain. Let's plant some trees!",
+        "cta": "Mint for MINT_PRICE",
+        "action": "MINT"
+      }
+    },
+    "saleOpen": {
+      "ps": "REMAINING_COUNT digital seeds remain. Thats about TREES_LEFT physical trees left to be planted!",
+      "cta": "Mint for MINT_PRICE",
+      "action": "MINT",
+      "signedOut": {
+        "action": "SIGN_IN"
+      }
+    },
+    "allSold": {
+      "title": "All INITIAL_COUNT minted!",
+      "body": "NEAR Nature Digital Seeds, Physical Trees have all been planted!",
+      "ps": "",
+      "cta": "Buy Pre-Owned",
+      "action": "GO_TO_PARAS"
+    }
+  }
+}
