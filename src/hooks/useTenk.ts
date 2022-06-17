@@ -2,7 +2,7 @@ import React from "react"
 import { NftContractMetadata, SaleInfo, Token as RawToken } from "../near/contracts/tenk"
 import { TenK } from "../near/contracts"
 import { wallet } from "../near"
-import staleData from "./stale-data-from-build-time.json"
+import staleData from "../../stale-data-from-build-time.json"
 
 const account_id = wallet.getAccountId()
 
@@ -12,11 +12,11 @@ type Token = RawToken & {
 
 export interface TenkData {
   contractMetadata?: NftContractMetadata
-  mintLimit: number
-  mintRateLimit?: number
+  remainingAllowance?: number
+  mintRateLimit: number
   nfts: Token[]
   saleInfo: SaleInfo
-  tokensLeft?: number
+  tokensLeft: number
   vip: boolean
 }
 
@@ -44,7 +44,7 @@ export async function rpcData(): Promise<TenkData> {
     contractMetadata,
     tokensLeft,
     vip,
-    mintLimit,
+    remainingAllowance,
     nfts,
     mintRateLimit
   ] = await rpcCalls
@@ -53,11 +53,11 @@ export async function rpcData(): Promise<TenkData> {
     contractMetadata,
     tokensLeft,
     vip: vip ?? false,
-    mintLimit: mintLimit ?? 0,
+    remainingAllowance: remainingAllowance ?? undefined,
     nfts: nfts?.map(nft => ({ ...nft,
-      media: new URL(nft.metadata?.media ?? '', contractMetadata.base_uri ?? '').href,
+      media: new URL(nft.metadata?.media ?? '', contractMetadata.base_uri ?? '').href
     })) ?? [],
-    mintRateLimit: mintRateLimit ?? undefined,
+    mintRateLimit: mintRateLimit ?? 10,
   }
 }
 
