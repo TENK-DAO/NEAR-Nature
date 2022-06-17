@@ -90,6 +90,13 @@ $tertiary: #a463b0 !default;
   --red: #ff8588;
 }
 
+  /* Media Queries */
+  @media (max-width: 615px) {
+    .container {
+      padding: var(--spacing-m) var(--spacing-l) !important;
+    }
+  }
+
 @function light($color) {
   @return adjust-color($color, $saturation: 53%, $lightness: 15%);
 }
