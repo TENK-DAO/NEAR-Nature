@@ -33,13 +33,13 @@
       "action": "JOIN_DISCORD",
       "vip": {
         "ps": "REMAINING_COUNT remain. Let's plant some trees!",
-        "cta": "Mint for 7 NEAR",
+        "cta": "Mint for MINT_PRICE",
         "action": "MINT"
       }
     },
     "saleOpen": {
       "ps": "REMAINING_COUNT digital seeds remain. Thats about TREES_LEFT physical trees left to be planted!",
-      "cta": "Mint for 7 NEAR",
+      "cta": "Mint for MINT_PRICE",
       "action": "MINT",
       "signedOut": {
         "action": "SIGN_IN"
