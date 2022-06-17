@@ -25,7 +25,7 @@ export default function Nav() {
         <h1>
           <StaticImage
             src="../../../config/images/logo.png"
-            alt="MonkeDemonz"
+            alt="NEAR Nature"
             loading="eager"
             height={50}
           />
