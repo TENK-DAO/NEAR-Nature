@@ -123,6 +123,7 @@ const actions = {
     gas: Gas.parse('40 Tgas').mul(Gas.from('' + d.numberToMint)),
     attachedDeposit: NEAR.from(d.saleInfo.price).mul(NEAR.from('' + d.numberToMint)),
   }),
+  'JOIN_DISCORD': () => window.open('http://discord.gg/WeMHtpHJZ7'),
   'GO_TO_PARAS': () => window.open(`https://paras.id/search?q=${settings.contractName}&sort=priceasc&pmin=.01&is_verified=true`),
 }
 
